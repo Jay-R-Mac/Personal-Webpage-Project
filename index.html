@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan McIntyre</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-green-50 text-gray-800">
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="bio.html">Bio</a>
-          </li>
-          <li>
-            <a href="experience.html">Experience</a>
-          </li>
-          <li>
-            <a href="portfolio.html">Portfolio</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="bg-green-600 p-4 shadow-md">
+            <ul class="flex space-x-4">
+                <li>
+                    <a href="index.html" class="text-white hover:text-blue-300 font-bold">Home</a>
+                </li>
+                <li>
+                    <a href="bio.html" class="text-white hover:text-blue-300">Bio</a>
+                </li>
+                <li>
+                    <a href="experience.html" class="text-white hover:text-blue-300">Experience</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="text-white hover:text-blue-300">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-      <h1>Jordan McIntyre</h1>
-      <!-- This landing page is your first impression. You can include a photo, a mission statement, and something which defines you. Using a quote is a great idea, as well. -->
-       <section>
-        <h2>Who Am I?</h2>
-        <p>I'm Jordan, a software engineer with a background in healthcare. I'm always looking towards using new skills, while leaning on previous experience to help guide my decision making. With a wealth of experience in working under pressure, time critical environments and a wealth of leadership experience. I'm a fantastic asset to any team </p>
-       </section>
+    <main class="max-w-4xl mx-auto p-4">
+        <section class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-700">Welcome to My Personal Page</h1>
+            <p class="mt-2 text-xl text-gray-600">I'm Jordan McIntyre, a passionate software engineer with a history in Healthcare</p>
+            <img src="./profile.jpeg" alt="Jordan McIntyre" class="rounded-full h-32 w-32 mx-auto mt-4 shadow-lg">
+        </section>
+
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-green-600">Who Am I?</h2>
+            <p class="mt-2">I'm a software engineer with a background in healthcare. I continuously seek to apply my skills while leveraging my past experiences to guide my decision-making. With extensive experience working in high-pressure, time-critical environments, I pride myself on being a valuable asset to any team.</p>
+        </section>
+
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-green-600">My Philosophy</h2>
+            <blockquote class="border-l-4 border-green-600 pl-4 italic mt-2">
+                "Talent hits a target no one else can hit; Genius hits a target no one else can see." - Arthur Schopenhauer
+            </blockquote>
+        </section>
     </main>
-    <footer>
-      <p>Copyright &copy; 2024 Jordan McIntyre</p>
+
+    <footer class="bg-green-600 text-white text-center py-4">
+        <p>Copyright &copy; 2024 Jordan McIntyre</p>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
+

@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jordan McIntyre</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="bio.html">Bio</a>
-          </li>
-          <li>
-            <a href="experience.html">Experience</a>
-          </li>
-          <li>
-            <a href="portfolio.html" aria-current="page">Portfolio</a>
-          </li>
-        </ul> 
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-green-50 text-gray-800">
+  <header>
+      <nav class="bg-green-600 p-4 shadow-md">
+          <ul class="flex space-x-4">
+              <li>
+                  <a href="index.html" class="text-white hover:text-blue-300">Home</a>
+              </li>
+              <li>
+                  <a href="bio.html" class="text-white hover:text-blue-300">Bio</a>
+              </li>
+              <li>
+                  <a href="experience.html" class="text-white hover:text-blue-300">Experience</a>
+              </li>
+              <li>
+                  <a href="portfolio.html" class="text-white hover:text-blue-300 font-bold">Portfolio</a>
+              </li>
+          </ul>
       </nav>
     </header>
-    <main>
-      <h1>Portfolio</h1>
-      <!-- The meat and potatoes of your personal site, here you want to include the projects you’ve worked on. For each project you wish to showcase, you should include the name of your project, a brief description, a screenshot, and a link to where it lives on the web. Since we don’t have any projects to display yet, placeholder images/links/descriptions are completely fine. -->
+    <main class="max-w-4xl mx-auto p-4">
+        <h1 class="text-4xl font-bold text-blue-700">Experience</h1>
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold text-green-600">Professional Life</h2>
+            <p class="mt-2">My career started in the Ambulance service and slowly transitioned into Software Development</p>
+        </section>
+
+        <!--Nc News BE-->
+        <article class="flex bg-white shadow-lg rounded-lg p-6 mb-8">
+
+            <img src="./BE.png" alt="VScode Screenshot of a RESTful API" class="h-60 w-60 rounded-lg mr-4 shadow-md">
+
+            <div>
+                <h3 class="text-xl font-semibold text-green-600">NC News Backend</h3>
+                <p>During my time time at Northcoders I worked on a reddit style website, the first part involved creating a RESTful API to host the data for use in the front end using the Model View Controller Model</p>
+            </div>
+        </article>
+
+        <!--NC News FE-->
+        <article class="flex bg-white shadow-lg rounded-lg p-6 mb-8">
+            <img src="./Fe.png" alt="Northcoders Logo" class="h-60 w-60 rounded-lg mr-4 shadow-md">
+            <div>
+                <h3 class="text-xl font-semibold text-green-600">NC News Frontend</h3>
+                <p>The next project was the front end of the <span class="text-blue-700"><a href="https://jrm-nc-news.netlify.app/articles/article/34">NC-News Project</a></span> and used everything I had learned so far for styling and interactions. It included deleting and adding comments and generating articles.</p>
+            </div>
+        </article>
+
+        <!--Trippy-->
+        <article class="flex bg-white shadow-lg rounded-lg p-6 mb-8">
+          <div class="mr-4">
+              <h3 class="text-xl font-semibold text-green-600">Trippy</h3>
+              <p>The final Project at Northcoders was a School Trip organiser app targeted at schools with separate users for teachers, students and parents. Please see the video below for a full overview </p>
+              <!-- Embed YouTube Video -->
+              <iframe 
+                  class="mt-4 rounded-lg shadow-md" 
+                  width="750" 
+                  height="300" 
+                  src="https://www.youtube.com/embed/DqfvK2uBgHg" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </article>
     </main>
-    <footer>
+    <footer class="bg-green-600 text-white text-center py-4">
       <p>Copyright &copy; 2024 Jordan McIntyre</p>
-    </footer>
+  </footer>>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
